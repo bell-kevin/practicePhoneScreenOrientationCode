@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, useWindowDimensions } from 'react-native';
+import { View, Text, StyleSheet, useWindowDimensions, StatusBar } from 'react-native';
 
 const App = () => {
   const [orientation, setOrientation] = useState('portrait');
@@ -11,6 +11,8 @@ const App = () => {
   }, [width, height]);
 
   return (
+    <>
+    <StatusBar backgroundColor={orientation === 'portrait' ? 'red' : 'green'} barStyle="dark-content" />
     <View style={[styles.container, orientation === 'portrait' ? styles.portraitContainer : styles.landscapeContainer]}>
       <Text style={[styles.text, orientation === 'portrait' ? styles.portraitText : styles.landscapeText]}>
         Orientation by Kevin Bell
@@ -28,14 +30,15 @@ const App = () => {
         <View style={styles.innerBox}></View>
       </View>
     </View>
+    </>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 80,
   },
   portraitContainer: {
     backgroundColor: 'red',
