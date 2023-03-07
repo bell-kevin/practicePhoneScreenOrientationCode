@@ -53,10 +53,10 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 10,
+    marginBottom: 30,
   },
   portraitText: {
-    marginTop: 200,
+    marginTop: 1,
   },
   landscapeText: {
     marginTop: 40,
