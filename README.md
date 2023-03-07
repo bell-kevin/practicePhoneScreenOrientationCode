@@ -16,11 +16,11 @@ Be sure to put your name in the heading where it says "Your Name".
 
 Use the hook "useWindow Dimensions" to detect the orientation, and ternary expressions to assign the appropriate values to the styles for each orientation.
 
-Take a screenshot similar to the example.
-
- 
+Take a screenshot similar to the example. 
 
 Submission: Zip together the screenshot and the root folder of the project, and submit a single zipped file.
+
+![p](https://github.com/bell-kevin/practicePhoneScreenOrientationCode/blob/main/assets/screenshots/red.PNG)
 
 ## How to:
 
