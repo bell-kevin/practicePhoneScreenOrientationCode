@@ -4,9 +4,9 @@ In this project, you will practice with orientation -- portrait vs landscape -- 
 
 In this project, you will put 4 boxes on the screen in portrait mode. Review the project about icons, which started out with small boxes on top of larger boxes. When the orientation changes to landscape mode, the background color will change, the flex direction will change, and the space between objects will decrease. Here are examples:
 
-orientation-portrait.PNG 
+![orientation-portrait.PNG](https://github.com/bell-kevin/practicePhoneScreenOrientationCode/blob/main/assets/pics/orientation-portrait.PNG) 
 
-orientation-landscape.PNG
+![orientation-landscape.PNG](https://github.com/bell-kevin/practicePhoneScreenOrientationCode/blob/main/assets/pics/orientation-landscape.PNG)
 
 In portrait mode: background color is red; flex direction is column; top margin on the text is 200; bottom margin between text and boxes is 30.
 
