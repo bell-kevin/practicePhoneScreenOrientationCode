@@ -20,7 +20,11 @@ Take a screenshot similar to the example.
 
 Submission: Zip together the screenshot and the root folder of the project, and submit a single zipped file.
 
+Android:
+
 ![p](https://github.com/bell-kevin/practicePhoneScreenOrientationCode/blob/main/assets/screenshots/red.PNG)
+
+iOS (Apple):
 
 ![p](https://github.com/bell-kevin/practicePhoneScreenOrientationCode/blob/main/assets/screenshots/iOS.PNG)
 
