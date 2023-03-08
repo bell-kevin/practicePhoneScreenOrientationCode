@@ -12,30 +12,30 @@ const App = () => {
 
   return (
     <>
-      <StatusBar 
-        backgroundColor={orientation === 'portrait' ? 'red' : 'green'} 
-        barStyle="dark-content" />
-      <View 
-        style={[styles.container, orientation === 
-          'portrait' ? styles.portraitContainer : styles.landscapeContainer]}>
-        <Text 
-          style={[styles.text, orientation === 
-            'portrait' ? styles.portraitText : styles.landscapeText]}>
-          Orientation by Kevin Bell
-        </Text>
-        <View style={[styles.box, styles.box1]}>
-          <View style={styles.innerBoxSmall}></View>
-        </View>
-        <View style={[styles.box, styles.box2]}>
-          <View style={styles.innerBox}></View>
-        </View>
-        <View style={[styles.box, styles.box3]}>
-          <View style={styles.innerBoxSmall}></View>
-        </View>
-        <View style={[styles.box, styles.box4]}>
-          <View style={styles.innerBox}></View>
-        </View>
+    <StatusBar 
+      backgroundColor={orientation === 'portrait' ? 'red' : 'green'} 
+      barStyle="dark-content" />
+    <View 
+      style={[styles.container, orientation === 
+        'portrait' ? styles.portraitContainer : styles.landscapeContainer]}>
+      <Text 
+        style={[styles.text, orientation === 
+          'portrait' ? styles.portraitText : styles.landscapeText]}>
+        Orientation by Kevin Bell
+      </Text>
+      <View style={[styles.box, styles.box1]}>
+        <View style={styles.innerBoxSmall}></View>
       </View>
+      <View style={[styles.box, styles.box2]}>
+        <View style={styles.innerBox}></View>
+      </View>
+      <View style={[styles.box, styles.box3]}>
+        <View style={styles.innerBoxSmall}></View>
+      </View>
+      <View style={[styles.box, styles.box4]}>
+        <View style={styles.innerBox}></View>
+      </View>
+    </View>
     </>
   );
 };
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     marginTop: 1,
   },
   landscapeText: {
-    marginTop: 40,
+    marginTop: 20,
   },
   box: {
     width: 100,
