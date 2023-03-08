@@ -20,6 +20,8 @@ Take a screenshot similar to the example.
 
 Submission: Zip together the screenshot and the root folder of the project, and submit a single zipped file.
 
+https://github.com/academind/react-native-practical-guide-code/tree/05-adaptive-uis/code/07-finished
+
 Android:
 
 ![p](https://github.com/bell-kevin/practicePhoneScreenOrientationCode/blob/main/assets/screenshots/red.PNG)
