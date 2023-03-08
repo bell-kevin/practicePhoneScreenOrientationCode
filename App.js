@@ -12,24 +12,30 @@ const App = () => {
 
   return (
     <>
-    <StatusBar backgroundColor={orientation === 'portrait' ? 'red' : 'green'} barStyle="dark-content" />
-    <View style={[styles.container, orientation === 'portrait' ? styles.portraitContainer : styles.landscapeContainer]}>
-      <Text style={[styles.text, orientation === 'portrait' ? styles.portraitText : styles.landscapeText]}>
-        Orientation by Kevin Bell
-      </Text>
-      <View style={[styles.box, styles.box1]}>
-        <View style={styles.innerBoxSmall}></View>
+      <StatusBar 
+        backgroundColor={orientation === 'portrait' ? 'red' : 'green'} 
+        barStyle="dark-content" />
+      <View 
+        style={[styles.container, orientation === 
+          'portrait' ? styles.portraitContainer : styles.landscapeContainer]}>
+        <Text 
+          style={[styles.text, orientation === 
+            'portrait' ? styles.portraitText : styles.landscapeText]}>
+          Orientation by Kevin Bell
+        </Text>
+        <View style={[styles.box, styles.box1]}>
+          <View style={styles.innerBoxSmall}></View>
+        </View>
+        <View style={[styles.box, styles.box2]}>
+          <View style={styles.innerBox}></View>
+        </View>
+        <View style={[styles.box, styles.box3]}>
+          <View style={styles.innerBoxSmall}></View>
+        </View>
+        <View style={[styles.box, styles.box4]}>
+          <View style={styles.innerBox}></View>
+        </View>
       </View>
-      <View style={[styles.box, styles.box2]}>
-        <View style={styles.innerBox}></View>
-      </View>
-      <View style={[styles.box, styles.box3]}>
-        <View style={styles.innerBoxSmall}></View>
-      </View>
-      <View style={[styles.box, styles.box4]}>
-        <View style={styles.innerBox}></View>
-      </View>
-    </View>
     </>
   );
 };
@@ -47,13 +53,17 @@ const styles = StyleSheet.create({
   landscapeContainer: {
     backgroundColor: 'green',
     flexDirection: 'row',
-    marginTop: 40,
-    marginBottom: 20,
+    marginTop: 0,
+    marginBottom: 0,
+  },
+  landscapeContentContainer: {
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center',
   },
   text: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 30,
   },
   portraitText: {
     marginTop: 1,
