@@ -26,6 +26,8 @@ Android:
 
 ![p](https://github.com/bell-kevin/practicePhoneScreenOrientationCode/blob/main/assets/screenshots/red.PNG)
 
+![p](https://github.com/bell-kevin/practicePhoneScreenOrientationCode/blob/main/assets/screenshots/landscape.PNG)
+
 iOS (Apple):
 
 ![p](https://github.com/bell-kevin/practicePhoneScreenOrientationCode/blob/main/assets/screenshots/iOS.PNG)
