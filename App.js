@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, useWindowDimensions, StatusBar } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  useWindowDimensions,
+  StatusBar
+} from 'react-native';
 
 const App = () => {
   const [orientation, setOrientation] = useState('portrait');
@@ -12,30 +18,35 @@ const App = () => {
 
   return (
     <>
-    <StatusBar 
-      backgroundColor={orientation === 'portrait' ? 'red' : 'green'} 
-      barStyle="dark-content" />
-    <View 
-      style={[styles.container, orientation === 
-        'portrait' ? styles.portraitContainer : styles.landscapeContainer]}>
-      <Text 
-        style={[styles.text, orientation === 
-          'portrait' ? styles.portraitText : styles.landscapeText]}>
-        Orientation by Kevin Bell
-      </Text>
-      <View style={[styles.box, styles.box1]}>
-        <View style={styles.innerBoxSmall}></View>
+      <StatusBar
+        backgroundColor={orientation === 'portrait' ? 'red' : 'green'}
+        barStyle="dark-content" />
+      <View
+        style={[styles.landscapeContentContainer, orientation ===
+          'portrait' ? styles.portraitContainer : styles.landscapeContainer]}>
+        <Text
+          style={[styles.text, orientation ===
+            'portrait' ? styles.portraitText : styles.landscapeText]}>
+          Orientation by Kevin Bell
+        </Text>
       </View>
-      <View style={[styles.box, styles.box2]}>
-        <View style={styles.innerBox}></View>
+      <View
+        style={[styles.container, orientation ===
+          'portrait' ? styles.portraitContainer : styles.landscapeContainer]}>
+
+        <View style={[styles.box, styles.box1]}>
+          <View style={styles.innerBoxSmall}></View>
+        </View>
+        <View style={[styles.box, styles.box2]}>
+          <View style={styles.innerBox}></View>
+        </View>
+        <View style={[styles.box, styles.box3]}>
+          <View style={styles.innerBoxSmall}></View>
+        </View>
+        <View style={[styles.box, styles.box4]}>
+          <View style={styles.innerBox}></View>
+        </View>
       </View>
-      <View style={[styles.box, styles.box3]}>
-        <View style={styles.innerBoxSmall}></View>
-      </View>
-      <View style={[styles.box, styles.box4]}>
-        <View style={styles.innerBox}></View>
-      </View>
-    </View>
     </>
   );
 };
@@ -45,6 +56,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+
   },
   portraitContainer: {
     backgroundColor: 'red',
@@ -57,16 +69,18 @@ const styles = StyleSheet.create({
     marginBottom: 0,
   },
   landscapeContentContainer: {
-    flex: 1,
+    flex: .2,
     flexDirection: 'column',
     alignItems: 'center',
+    backgroundColor: 'green',
+    justifyContent: 'center',
   },
   text: {
     fontSize: 24,
     fontWeight: 'bold',
   },
   portraitText: {
-    marginTop: 1,
+    marginTop: 40,
   },
   landscapeText: {
     marginTop: 20,
